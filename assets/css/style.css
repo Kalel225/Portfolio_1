@@ -10,3 +10,40 @@ body{
     color: #222;
     overflow-x: hidden;
 }
+
+header{
+    background: #7a3df0;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
