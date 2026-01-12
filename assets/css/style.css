@@ -18,7 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px;
 }
 
 nav{
@@ -90,4 +90,82 @@ nav a:hover::after{
 .btn-outline:hover{
     background: #7a3df0;
     color: white;
+}
+
+
+.about{
+    background: #2c2f3f;
+    color: white;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 25px;
+}
+.about img{
+    width: 40%;
+    border-radius: 25px;
+    transition: .4s;
+}
+.about img:hover {
+    transform: scale(1.05);
+}
+
+/* Projet */
+.projects{
+    padding: 60px 40px;
+    text-align: center;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    transition: .4s;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.project-card img{
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+/* partie contact */
+.contact{
+    background: #2c2f3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+    margin: 40px;
+    border-radius: 25px;
+}
+.contact form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.contact input,
+.contact textarea{
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+footer{
+    background: #7a3df0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px ;
 }
