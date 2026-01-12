@@ -47,3 +47,47 @@ nav a::after{
 nav a:hover::after{
     width: 100%;
 }
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+.hero img{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .4s;
+}
+.hero img:hover{
+    transform: scale(1.05);
+}
+
+.btn{
+    background: #7a3df0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top:20px; 
+    transition: .3s;
+}
+.btn:hover{
+    background: #5e2edc;
+    transform: translateY(-3px);
+}
+.btn-outline{
+    background: transparent;
+    border: 2px solid #7a3df0;
+    color: #7a3df0;
+    padding: 10px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.btn-outline:hover{
+    background: #7a3df0;
+    color: white;
+}
